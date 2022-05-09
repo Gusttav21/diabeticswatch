@@ -1,6 +1,7 @@
 import 'package:gsheets/gsheets.dart';
 import '../../model/diabetics.dart';
 
+// ignore: camel_case_types
 class diabeticSheets {
   static const _credentials = r'''{
   
@@ -28,6 +29,7 @@ class diabeticSheets {
       final firstRow = DiabeticFields.getFields();
       _diabeticSheet!.values.insertRow(1, firstRow);
     } catch (e) {
+      // ignore: avoid_print
       print('init error: $e');
     }
   }
