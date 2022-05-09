@@ -16,6 +16,7 @@
                  the Android process has started. This theme is visible to the user
                  while the Flutter UI initializes. After that, this theme continues
                  to determine the Window background behind the Flutter UI. -->
+                 
             <meta-data
               android:name="io.flutter.embedding.android.NormalTheme"
               android:resource="@style/NormalTheme"
@@ -27,8 +28,10 @@
         </activity>
         <!-- Don't delete the meta-data below.
              This is used by the Flutter tool to generate GeneratedPluginRegistrant.java -->
+             <uses-permission android:name="android.permission.INTERNET"/> <!-- Add this -->
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
     </application>
 </manifest>
+
